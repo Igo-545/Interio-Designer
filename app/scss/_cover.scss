@@ -1,0 +1,103 @@
+$color-black: #000000;
+$color-white: #ffffff;
+
+.cover{
+    color: $color-white;
+    text-align: center;
+    -webkit-text-fill-color: inherit;
+    background-color: $color-white;
+    background-clip: border-box;
+    width: 100%;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+}
+.title_wrapper{
+    width: 100%;
+    max-width: 100%;
+    height: 10.67vw;
+    overflow: hidden;
+}
+.title{
+    z-index: 89;
+    color: $color-black;
+    letter-spacing: -4px;
+    text-wrap: nowrap;
+    -webkit-text-stroke-color: $color-white;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 10.67vw;
+    font-weight: 400;
+    line-height: 1;
+    overflow: hidden;
+    transform: translateY(100%);
+    animation: title-home 1.25s cubic-bezier(.31, 0, .05, .93) .1s forwards;
+    -webkit-animation: title-home 1.25s cubic-bezier(.31, 0, .05, .93) .1s forwards;
+    &.title_hidden{
+        color: $color-white;
+    }
+}
+.subtitle_wrapper{
+    z-index: 99;
+    object-fit: fill;
+    width: 60%;
+    max-width: 60%;
+    height: 1.7vw;
+    font-weight: 400;
+    min-height: auto;
+    font-size: 22px;
+    line-height: 120%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+}
+.subtitle{
+    z-index: 92;
+    color: $color-black;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    transform: translateY(100%);
+    animation: animSubtitle 1s cubic-bezier(0.31, 0, 0.05, 0.93) .1s forwards;
+    -webkit-animation: animSubtitle 1s cubic-bezier(0.31, 0, 0.05, 0.93) .1s forwards;
+    animation-delay: 0.75s;
+}
+.slider_home{
+    z-index: 90;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    align-self: center;
+    flex: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    inset: auto;
+    & .showing{
+        opacity: 1;
+    }
+}
+.slide_home{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    &_img{
+        width: 100vw;
+        height: auto;
+    }
+}
+.slider_title_container{
+    width: 100%;
+    min-width: 162%;
+    height: 10.67vw;
+    position: absolute;
+    overflow: hidden;
+}

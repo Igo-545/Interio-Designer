@@ -1,0 +1,281 @@
+@media only screen and (max-width: 991px){
+    .about_title{
+        letter-spacing: -4px;
+        font-size: 112px;
+        font-weight: 400;
+        line-height: 92.96px;
+    }
+    .about_img-hidden{
+        width: 50vw;
+        height: 70vw;
+    }
+    .title_wrapper{
+        height: 10.6vw;
+    }
+    .title{
+        letter-spacing: -3px;
+        font-size: 10.6vw;
+    }
+    .subtitle_wrapper{
+        height: 2.7vw;
+    }
+    .subtitle{
+        font-size: 2.5vw;
+        line-height: 2.7vw;
+    }
+    .apartment{
+        &_image_hidden{
+            margin-top: 16.326vw;
+        }
+        &_descr{
+            &_number{
+                font-size: 90px;
+                line-height: 74.7px;
+            }
+            &_title{
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+            &_body{
+                padding-top: 6.122vw;
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+            &_text{
+                font-size: 24px;
+            }
+        }
+        &_columns{
+            width: 95.27vw;
+            height: 57.55vw;
+            margin-top: 16.326vw;
+        }
+        &_columns_2{
+            margin-top: 16.326vw;
+            margin-bottom: 16.326vw;
+        }
+        &_columns_3{
+            margin-top: 16.326vw;
+            margin-bottom: 16.326vw;
+        }
+        &_column{
+            width: 46.33vw;
+            height: 47.86vw;
+        }
+        &_column_2{
+            width: auto;
+            height: auto;
+        }
+        &_column_3{
+            width: 46.33vw;
+            height: 47.86vw;
+        }
+    }
+    .footer{
+        grid-column-gap: 40px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .menu_container{
+        text-align: left;
+    }
+    .menu_secondery_item{
+        height: 3.2vh;
+    }
+    .menu_secondery_link{
+        font-size: 3.2vh;
+    }
+    .about_mask{
+        grid-column-gap: 16px;
+    }
+    .about_title{
+        letter-spacing: -3px;
+        font-size: 11vw;
+        font-weight: 400;
+        line-height: 86%;
+    }
+    .about_img-hidden{
+        width: 60vw;
+        height: 70vw;
+    }
+    .cover{
+        text-align: center;
+    }
+    .subtitle_wrapper{
+        width: 90%;
+        max-width: 90%;
+        height: 3.6vw;
+    }
+    .subtitle{
+        font-size: 3.4vw;
+        line-height: 3.6vw;
+    }
+    .apartment{
+        &_descr{
+            &_text{
+                width: 100%;
+                font-size: 22px;
+            }
+        }
+        &_columns{
+            width: 100%;
+            height: auto;
+        }
+        &_columns_2{
+            grid-template-rows: auto auto;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-columns: 1fr;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        &_columns_3{
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        &_column{
+            width: 46.33vw;
+            height: 47.86vw;
+        }
+    }            
+}
+@media only screen and (max-width: 479px){
+    .container{
+        padding: 144px 20px 11.11vw;
+    }
+    .header{
+        padding: 20px;
+    }
+    .menu_container{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    .menu_column{
+        width: 100%;
+    }
+    .menu_column2{
+        display: none;
+    }
+    .menu_item{
+        width: 100%;
+        text-align: left; 
+    }
+    .menu_secondery_items{
+        width: 100%;
+    }
+    .about_container{
+        padding: 144px 20px 40px;
+    }
+    .about_mask{
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+    }
+    .about_title{
+        letter-spacing: -2px;
+        font-size: 16vw;
+        line-height: 13.28vw;
+    }
+    .about_img-hidden{
+        width: 60vw;
+        height: 80vw;
+    }
+    .about_description{
+        font-size: 22px;
+        line-height: 26.4px;
+        letter-spacing: 0;
+    }
+    .cover{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .title_wrapper{
+        height: 36vw;
+    }
+    .title{
+        letter-spacing: -1px;
+        font-size: 18.8vw;
+        text-wrap: wrap;
+    }
+    .subtitle_wrapper{
+        height: 12.8vw;
+        position: absolute;
+        bottom: 40px;
+    }
+    .subtitle{
+        font-size: 6vw;
+        line-height: 6.4vw;
+    }
+    .slider_home{
+        width: 100%;
+    }
+    .slider_title_container{
+        width: 100%;
+        height: 36vw; 
+    }
+    .apartment{
+        &_image_hidden{
+            margin-top: 21.34vw;
+        }
+        &_descr{
+            &_header{
+                row-gap: 20px;
+            }
+            &_number{
+                font-size: 72px;
+                line-height: 59.76px;
+            }
+            &_title{
+                font-size: 22px;
+                line-height: 26.4px;
+            }
+            &_body{
+                padding-top: 21.33vw;
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+            &_text{
+                font-size: 22px;
+                line-height: 26.4px;
+            }
+        }
+        &_columns{
+            flex-flow: column;
+            column-gap: 0;
+            row-gap: 24px;
+            margin-top: 21.33vw;
+        }
+        &_columns_2{
+            width: 100%;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            margin-top: 21.33vw;
+            margin-bottom: 21.33vw;
+        }
+        &_columns_3{
+            flex-flow: column;
+            column-gap: 0;
+            row-gap: 24px;
+            margin-top: 21.33vw;
+            margin-bottom: 21.33vw;
+        }
+        &_column{
+            width: 100%;
+            height: 90vw;
+        }
+        &_column_2{
+            width: auto;
+            height: auto;
+        }
+        &_column_3{
+            width: 100%;
+            height: 90vw;
+        }
+    }
+    .footer{
+        text-align: center;
+        flex-flow: wrap;
+        place-content: center;
+        grid-column-gap: 60px;
+        grid-row-gap: 16px;
+    }                   
+}

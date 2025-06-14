@@ -1,0 +1,139 @@
+.gallery{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: animGallery 1.5s cubic-bezier(.85, .01, .4, 1) forwards;
+    -webkit-animation: animGallery 1.5s cubic-bezier(.85, .01, .4, 1) forwards;
+}
+.card_img{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.65s cubic-bezier(0.22, 0.9, 0.5, 1);
+    will-change: transform;
+}
+.element{
+    width: 100vw;
+    height: 80vh;
+    display: block;
+    position: absolute;
+    top: 10vh;
+    bottom: auto;
+    left: 0;
+}
+.thumbnail_scroll{
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+.outer_name{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6.25vw;
+    display: flex;
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+.pr_name{
+    z-index: auto;
+    color: $color-black;
+    text-align: center;
+    letter-spacing: -.1vw;
+    text-transform: uppercase;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 6.25vw;
+    line-height: 100%;
+    position: absolute;
+    top: calc(50% - 3.125vw);
+    opacity: 0;
+    transition: opacity 0.65s cubic-bezier(0.22, 0.9, 0.5, 1);
+    will-change: transform;
+    .in-center &{
+        opacity: 1;
+    }
+    .active &{
+        opacity: 1;
+    }
+}
+.pr_inner{
+    z-index: 4;
+    color: $color-white;
+    text-align: center;
+    letter-spacing: -.1vw;
+    text-transform: uppercase;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 200%;
+    font-size: 6.25vw;
+    line-height: 100%;
+    position: absolute;
+    top: calc(50% - 3.125vw);
+    left: -50%;
+    opacity: 0;
+    transition: transform 0.65s cubic-bezier(0.22, 0.9, 0.5, 1);
+    will-change: transform;
+    .in-center &{
+        opacity: 1;
+    }
+    .active &{
+        opacity: 1;
+    }
+}
+.slide_link{
+    z-index: 1;
+    text-align: center;
+    width: 32vw;
+    height: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+    left: auto;
+    right: auto;
+    overflow: hidden;
+    transition: transform 0.65s cubic-bezier(0.22, 0.9, 0.5, 1);
+    will-change: transform;
+    &:hover .card_img{
+        transform: scale(0.9075);
+    }
+    &:hover .image{
+        transform: scale(1.2);       
+    }
+    &:hover .pr_inner{
+        transform: scale(1.0925);
+    }
+}
+.image{
+    text-align: center;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    display: block;
+    position: relative;
+    inset: auto;
+    transition: transform 0.65s cubic-bezier(0.22, 0.9, 0.5, 1);
+}
+.drag-proxy{
+    position: absolute;
+    overflow: visible;
+}
