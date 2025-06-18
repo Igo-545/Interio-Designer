@@ -23,6 +23,12 @@
         font-size: 2.5vw;
         line-height: 2.7vw;
     }
+    .pr_inner, .pr_name{
+        font-size: 10vw;
+    }
+    .slide_link{
+        width: 70vw;
+    }
     .apartment{
         &_image_hidden{
             margin-top: 16.326vw;
@@ -204,6 +210,9 @@
     .subtitle{
         font-size: 6vw;
         line-height: 6.4vw;
+    }
+    .slide_link{
+        width: 90vw;
     }
     .slider_home{
         width: 100%;
